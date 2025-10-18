@@ -11,6 +11,41 @@
 
 import 'package:flutter/widgets.dart';
 
+class $AssetsFontsGen {
+  const $AssetsFontsGen();
+
+  /// File path: assets/fonts/Euclid-Circular-A-Bold.ttf
+  String get euclidCircularABold => 'assets/fonts/Euclid-Circular-A-Bold.ttf';
+
+  /// File path: assets/fonts/Euclid-Circular-A-Medium.ttf
+  String get euclidCircularAMedium =>
+      'assets/fonts/Euclid-Circular-A-Medium.ttf';
+
+  /// File path: assets/fonts/Euclid-Circular-A-Regular.ttf
+  String get euclidCircularARegular =>
+      'assets/fonts/Euclid-Circular-A-Regular.ttf';
+
+  /// File path: assets/fonts/Euclid-Circular-A-SemiBold.ttf
+  String get euclidCircularASemiBold =>
+      'assets/fonts/Euclid-Circular-A-SemiBold.ttf';
+
+  /// File path: assets/fonts/Montserrat-Black.ttf
+  String get montserratBlack => 'assets/fonts/Montserrat-Black.ttf';
+
+  /// File path: assets/fonts/Montserrat-SemiBold.ttf
+  String get montserratSemiBold => 'assets/fonts/Montserrat-SemiBold.ttf';
+
+  /// List of all assets
+  List<String> get values => [
+    euclidCircularABold,
+    euclidCircularAMedium,
+    euclidCircularARegular,
+    euclidCircularASemiBold,
+    montserratBlack,
+    montserratSemiBold,
+  ];
+}
+
 class $AssetsIconsGen {
   const $AssetsIconsGen();
 
@@ -82,18 +117,27 @@ class $AssetsImagesGen {
   /// File path: assets/images/6.jpg
   AssetGenImage get a6 => const AssetGenImage('assets/images/6.jpg');
 
-  /// File path: assets/images/aaa
-  String get aaa => 'assets/images/aaa';
+  /// List of all assets
+  List<AssetGenImage> get values => [a1, a2, a3, a4, a5, a6];
+}
+
+class $AssetsLottieGen {
+  const $AssetsLottieGen();
+
+  /// File path: assets/lottie/salad.json
+  String get salad => 'assets/lottie/salad.json';
 
   /// List of all assets
-  List<dynamic> get values => [a1, a2, a3, a4, a5, a6, aaa];
+  List<String> get values => [salad];
 }
 
 class Assets {
   const Assets._();
 
+  static const $AssetsFontsGen fonts = $AssetsFontsGen();
   static const $AssetsIconsGen icons = $AssetsIconsGen();
   static const $AssetsImagesGen images = $AssetsImagesGen();
+  static const $AssetsLottieGen lottie = $AssetsLottieGen();
 }
 
 class AssetGenImage {
